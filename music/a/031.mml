@@ -1,0 +1,7 @@
+;031 001BA7C6
+!1  T90 T83 r16 H-3 E90,100,70,1,6 @@4,2,0 EP-8,0,0,1,3 P12,11,5 V6 O3 < _V-4 a+48 @0 EPX b48~ > ) c48~ c+48~ d48~ d+48 _V3 @@4,2,0 EP-8,0,0,1,3 e32 e16 e32~ > g16 < e16 _V-4 > g16 E100,50,20,3,15 @@2,0,3 O3 V6 EPX PX a16 _V-4 a16 r16 B1 EX @2 V6 O2 r48 D-1 Y.R [ a32 >~ YL. a16 < Y.R ]2 YL.~ a32 >~ Y.R a16 
+!2  r16 H-3 E90,100,70,1,6 @@4,2,0 EP-8,0,0,1,3 P12,11,5 V8 O3 _V-4 d+48 @0 EPX e48~ ) f48~ f+48~ g48~ g+48 _V3 @@4,2,0 EP-8,0,0,1,3 a32 a16 a32~ > c16 < a16 _V-6 > c16 E100,50,20,3,15 @@2,0,3 EPX O3 V8 PX d32 d+32 d32 c32 < a32 g32 B1 EX @2 V8 O2 EPX Y.R [ a32 >~ YL. a16 < Y.R ]2 YL.~ a32 >~ Y.R a16 r48 
+!3  V3 O1 H-3 `9F00 `AE00 E100,70,70,4,0 B1 @A3 O1 V3 r8. V2 a32 V3 a32 V1 a32 V2 a32 [ V3 a32 V1 a32 ]2 r16 V2 > E100,100,20,17,15 EP0,0,-30,8,21 g8. EPX E100,70,70,4,0 < V3 a32 V2 a32 V1 a32 V3 g32 V2 g32 V1 g32 V2 a32 V3 a16 
+!4  r16 @8 x8 r16 @6 x8 x16 @7 x8 @6 x16 x16 x16 x16 x16 x32 @8 x8. 
+!5  V1 @2 Y.R d+48 YLR c48 YL. < g+48 > YLR @0 c8 @1 c32 c32 V0 c32 V1 c32 c32 V0 c32 V1 c32 < @2 YL. V0 g+32 V1 f16 > YLR @1 V0 c48 c48 c48 V1 c32 YL. @2 d+32 YLR c32 YL. < g+32 YLR > @1 V1 c32 V0 c32 c32 V1 c32 V0 c32 c32 V1 c32 @0 c16 
+!6  r8. H-3 @14 O1 V0 a32 V1 a16 V0 a32 > V1 c16 < a16 V0 a16 O2 @7 Y.R d32 d+32 d32 YL. c32 < a32 g32 YLR @8 V0 a32 V1 a32 Y.R V0 a32 V0 YLR a32 V1 a32 V0 YL. a32 YLR V0 a32 V1 a16 

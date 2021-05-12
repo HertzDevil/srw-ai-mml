@@ -1,0 +1,7 @@
+;045 003380AC
+!1  T150 @0 @@3,2,0 E100,90,60,22,37 YLR B1 V7 [ V8 O2 d16 d16 r16 d16 d16 r16 [ V7 f16 V5 f16 ]3 ]2 V7 < b32 V4 b32 V7 > d32 V4 d32 V7 f32 V4 f32 V7 d32 V4 d32 V7 g+32 V4 g+32 V7 f32 V4 f32 V7 b32 V4 b32 V7 g+32 V4 g+32 V7 > d32 V4 d32 V7 < b32 V4 b32 V7 > f32 V4 f32 V7 d32 V4 d32 V7 P22,11,6 E100,70,0,47,47 g+1 
+!2  @0 @@3,2,0 E100,90,60,22,37 YLR B1 O3 [ O3 V8 f+16 f+16 r16 f+16 f+16 r16 V8 f16 V5 f16 V8 d16 V5 d16 V8 < b16 V5 b16 ]2 V8 d32 V5 d32 V8 f32 V5 f32 V8 g+32 V5 g+32 V8 f32 V5 f32 V8 b32 V5 b32 V8 g+32 V5 g+32 V8 > d32 V5 d32 V8 < b32 V5 b32 V8 > f32 V5 f32 V8 d32 V5 d32 V8 g+32 V5 g+32 V8 f32 V5 f32 V8 P22,11,6 E100,70,0,47,47 b1 
+!3  @A3 `9F00 `AE00 E100,95,90,15,0 YLR B1 V3 O1 [ c16 c16 r16 c16 c16 r16 < b16 r16 b16 r16 b16 r16 > ]2 O0 g+16 b16 d16 b16 > f16 d16 g+16 f16 b16 g16 d16 b16 P22,11,6 E100,70,0,47,47 > d1 
+!4  YLR @8 x4 @3 x8 x8 x8 x8 @8 x4 @3 x8 x8 x8 x1~ x4~ x8 
+!5  YLR V1 @8 O2 [ YL. f+16 Y.R f+8 YL. f+16 YL. f+8 Y.R f8 YL. f8 Y.R f8 ]2 < YLR d8 ( YL. d8 Y.R d8 ) YLR g+8 ( YL. g+8 Y.R g+8 ) > YLR d1 
+!6  YLR V0 @4 O1 b8. b16 b8 b8 b8 b8 b8. b16 b8 b8 b8 b8 b4. b4. b1 

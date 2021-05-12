@@ -1,0 +1,7 @@
+;037 001F17D0
+!1  T120 E100,80,20,11,30 @@1,0,3 P30,15,2 r3 _-2 O2 YLR V4 f6 Y.R V2 f6 YLR V4 f6 YL. V2 f6 YLR V4 g6 Y.R V2 g6 YLR V4 g6 YL. V2 g6 YLR V4 e6 Y.R V2 e6 YLR V4 e6 YL. V2 e6 YLR V4 f6 Y.R V2 f6 YLR V4 f6 YL. V2 f6 YLR V4 d6 Y.R V2 d6 YLR V4 d6 YL. V2 d6 YLR V4 f6 Y.R V2 f6 YLR V4 f6 YL. V2 f6 T100 YLR V4 c+6 Y.R V2 c+6 T80 YLR V4 e6 Y.R V2 e6 YLR V4 d3~ d3 
+!2  _-2 E100,80,20,17,45 @@2,0,3 P45,22,2 V4 a+12 ) b12 > ) c12 ) c+12 V8 d3 a3 a+6 a6 g6 f6 e6 f6 g6 e6 a3 f6 V2 f6 V8 < a+3 > f3 g6 f6 e6 d6 c+6 d6 e6 c+6 d3 V2 d3 
+!3  _-2 `9F01 P45,25,12 EP-2,0,0,6,0 @A1 @A0 V3 O2 r3 r3 d3 g6 f6 e6 d6 c3 V2 c3 V3 f6 e6 d6 c6 < a+3 V2 a+3 > V3 e6 d6 c+6 < a+6 a3 V2 a3 V3 d3 V1 d3 
+!4  @11 x3 [ @5 x6 @6 x6 @5 x6 @6 x6 ]7 @7 x3 
+!5  _-2 @40 W0,79,0 O1 YLR V1 a+12 b12 > c12 c+12 V1 YLR d3 a3 a+6 a6 g6 f6 e6 f6 g6 e6 a3 f6 V0 f6 V1 < a+3 > f3 g6 f6 e6 d6 c+6 d6 e6 c+6 d3 V0 d3 
+!6  _-2 @25 O1 r3 YLR V1 a6 Y.R V0 a6 YLR V1 a6 YL. V0 a6 YLR V1 a+6 Y.R V0 a+6 YLR V1 a+6 YL. V0 a+6 YLR V1 g6 Y.R V0 g6 YLR V1 g6 YL. V0 g6 YLR V1 a6 Y.R V0 a6 YLR V1 a6 YL. V0 a6 YLR V1 f6 Y.R V0 f6 YLR V1 f6 YL. V0 f6 YLR V1 g6 Y.R V0 g6 YLR V1 g6 YL. V0 g6 YLR V1 e6 Y.R V0 e6 YLR V1 g6 Y.R V0 g6 YLR V1 f3~ f3 
