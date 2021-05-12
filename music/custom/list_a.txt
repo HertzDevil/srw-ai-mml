@@ -1,0 +1,5 @@
+800000
+04	music/custom/the_winner.mml
+05	music/custom/z_lilywhite_loop_a.mml
+06	music/custom/judau.mml
+07	music/custom/sally.mml

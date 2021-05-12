@@ -1,0 +1,4 @@
+800000
+01	music/custom/z_lilywhite_loop.mml
+02	music/custom/judau.mml
+03	music/custom/sally.mml

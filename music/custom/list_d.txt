@@ -1,0 +1,2 @@
+800000
+06	music/custom/heero.mml

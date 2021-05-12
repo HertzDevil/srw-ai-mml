@@ -1,0 +1,260 @@
+; The Wings of a Boy that Killed Adolescence
+; 思春期を殺した少年の翼
+
+$PU1,		!1
+$PU2,		!2
+$WAV,		!3
+$NOI,		!4
+$PCMA,		!5
+$PCMB,		!6
+$PULSE,		!12
+$PCM,		!56
+$GB,		!1234
+$ALL,		!123456
+
+
+
+$bass1,		@A3 @B0 @~4
+$brass1,	E100,85,70,6,40 @@2,2,0 P8,11,3
+$pcmguitar1,	@61 W0,100,33
+
+
+
+$$ALL	T165 _0	; A Minor
+
+$$PU2	V10 $$brass1 O2 l12
+$$PU1	V8 E100,80,70,8,35 @1 D-1 O1 l12
+$$PULSE	a>c<ag+>c<g+g>c<gg+>c<g+ ab>cd6e3g+6aV4~aV2~aV1~ar2.
+
+$$PCMB	V1 @8 O1 l12
+	a>c<ag+>c<g+g>c<gg+>c<g+ ab>cd6e3g+6a< [@4 V1 a6a6aa]2
+
+$$WAV	;V3 E100,70,40,7,7 @A3 O0 l12
+	V3 @A3 @B0 @~4 O0 l12
+	a>c<ag+>c<g+g>c<gg+>c<g+ ab>cd6e3g+6a <(a(a)a(a)aaa(a)a(a)aa)
+
+$$PCMA	V1 O1 l12
+	[@1x]15 @0x6x3 @1x6x x6x4xx6x4x
+
+$$NOI	l12
+	r1r4 @8x6x3x6x3 @18x4r4x4
+
+
+
+$$ALL	L
+
+$$PU2	V12 $$brass1 O3
+$$PU1	V8 $$brass1 O3 D0
+$$PU2	a4 cd d+ e4>c<b >c <a1 _V-7x6r_V7>dc<b >c4~c6_V-7x_V7 dc<b>c<bab6>c_V-7xr_V7<a4_V-7x_V7
+$$PU1	e4<aa+b >c4 a g+ a  f1 _V-4x6r_V4 aa g+ a4~a6_V-4x_V4 aa g a gfg6 a_V-4xr_V4 e4_V-4x_V4
+$$PU2	 cd d+ e4>c<b >c <b6a 3~a 4_V-7x6r_V7 >dc<b>c<bab6>c_V-7xr_V7 <b3a6g+2_V-7x_V7
+$$PU1	<aa+b >c4 a g+ a  g6f+3~f+4_V-4x6r_V4  ba g a gfg6 a_V-4xr_V4  g3f6e 2_V-4x_V4
+$$PU2	a4 cd d+ e4>c<b >c <a1 _V-7x6r_V7>dc<b >c4~c6_V-7x_V7 dc<b>c<bab6>c_V-7xr_V7<a4_V-7x_V7
+$$PU1	e4<aa+b >c4 a g+ a  f1 _V-4x6r_V4 aa g+ a4~a6_V-4x_V4 aa g a gfg6 a_V-4xr_V4 e4_V-4x_V4
+$$PU2	egg+a4>c<b >c d 4e6<a 2_V-7x_V7 >c<babagage d eg  g+6>c_V-7xr_V7<a2_V-7x_V7
+$$PU1	cdd+e4 a g+ a f+4g6 f+2_V-4x_V4  a gfgfeedc<b>cd <g+6>c_V-4xr_V4<a2_V-4x_V4
+
+$$PCMB	@11 W0,98,39 O0 V0
+	e1f1f+1f2g4~g6 e12~e1f+1f2.~f6g2e12~e2
+	e1f1f+1f2g4~g6 e12~e1f+1f2g2
+	@8 O1 V1
+	g+6>c4<a2r
+
+$$WAV	O0
+	[a.(x24)x]12 f.(x24)xf.(x24)xg.(x24)xg.(x24)a
+	~a.(x24)x [a.(x24)x]3 >d.(x24)<a> d.(x24)xd.(x24)xd6@A0B5~<aB0$$bass1
+	[f.(x24)x]3 f.(x24)g@A0~g3$$bass1(x)g+2(x)
+	[a.(x24)x]12 f.(x24)xf.(x24)xg.(x24)xg.(x24)a
+	~a.(x24)x [a.(x24)x]3 > [d.(x24)x]3 d6@A0B5~<aB0$$bass1
+	f.(x24)xf.(x24)xg.(x24)xg.(x24)x g+.(x24)>c(xr)<a4a4(x)>
+
+$$PCMA	l4
+	[@0x @1x @0x6x12 @1x]3 @0x @1x @0x6x12 @1x6 @0x3
+	    [@1x @0x6x12 @1x @0x]2 @1x @0x6x12 @1x6 @0x3 @1x6 @0x3 @1x
+	[@0x @1x @0x6x12 @1x]3 @0x @1x @0x6x12 @1x6 @0x3
+	    [@1x @0x6x12 @1x @0x]2 @1x @0x6x12 @1x x6 @0xx @2g12d6 @1x12
+
+$$NOI	l4
+	@8x [@7x]14 x6 @8x3 [@7x]10 x6 @8x2x3 @7x
+	@8x [@7x]14 x6 @8x3 [@7x]11 @8x6x @13x2~x12
+
+
+
+$$ALL	k-bea		; C Minor
+
+$$PU2	V10 E100,80,70,6,40 @@1,2,1 P10,11,5 O2
+$$PU1	V8 E100,90,80,6,40 @3 P6,8,2 O3
+$$PULSE	e2cdef6e 1_V-5x_V5 gaa=ba=ag3~g_V-5x_V5 g-a  a=b a= a g-3~g-_V-5x_V5
+	e2cdef6g-1_V-5x_V5 gaa=ba=ag3~g_V-5x_V5 b b=>c d-c <b=b 3~b _V-5x_V5
+
+$$PCMB	@44 V1 l24
+	[>c(c)<g(g)]6 [>e(e)<b(b)]6 [g(g)>c(c)<]6 [b(b)>e(e)<]6
+	[g(g)>c(c)<]6 [b(b)>e(e)<]6 [>c(c)<g(g)]6 [>e(e)<b(b)]6
+
+$$WAV	[
+	 c.(x24)xc.(x24)xc.(x24)d-d.(x24)e~e.(x24)xe.(x24)xe.(x24)xe.(x24)<a=>
+	 c.(x24)xc.(x24)xc.(x24)gg-ff- e.(x24)xe.(x24)xe.(x24)xe6@A0B8~cB0$$bass1
+	]2 <
+
+$$PCMA	@0x @1x @0x6x12 @1x6 @0x3 @1x  @0x6x12 @1x [@0x @1x @0x6x12 @1x]2
+	@0x @1x @0x6x12 @1x6 @0x3 @1x [@0x6x12 @1x  @0x @1x]2 @1x12 @2g12g12d12d12 @1x12
+
+$$NOI	[@8x @7xxx6 @8x3 @7x @3x12x12x12x @7xxxxxx @3x12x12x12x]2
+
+
+
+$$ALL	k=bea k+f		; E Minor
+
+$$PU2	V12 $$brass1 O3
+$$PU1	V8 $$brass1 O3
+$$PU2	b2g6 e_V-7xr6r2_V7 dd+eg a g  b-2 g 6 a_V-7xr3_V7b-3g6a _V-7xr6_V7
+$$PU1	g2e6<b_V-4xr6r2_V4 aa+bb>c<b >d 2<b-6>c_V-4xr3_V4g 3e6f=_V-4xr6_V4
+$$PU2	b2g6 e_V-7xr6r2_V7 dd+eg a g  b-6a6 g 6 b-6a6 g 6 ) E85,70,100,10,60 >d-2._V-7x4_V7
+$$PU1	g2e6<b_V-4xr6r2_V4 aa+bb>c<b >d 6c6<b-6>d 6c6<b-6 ) E85,70,100,10,60  b-2._V-4x4_V4
+
+$$PCMB	V1 l24
+	[b(b)>e(e)b(b)<]5 @30x12 @44 >e(e)b(b)< [b(b)>e(e)b(b)<]2 [b-(b-)>d(d)b-(b-)<]8
+	[b(b)>e(e)b(b)<]5 @30x12 @44 >e(e)b(b)< [b(b)>e(e)b(b)<]2 [b-(b-)>d(d)b-(b-)<]4 [b-(b-)>f=(f=)b-(b-)<]3 @1x12x12 @44 b-(b-)
+
+$$WAV	[e.(x24)x]7 f=.(x24)f [g.(x24)x]7 f.(x24)f=
+	[e.(x24)x]7 f=.(x24)f [g.(x24)x]4 [b-.(x24)x]4 >
+
+$$PCMA	@0x @30x @0x [@4e12e12e12e]2 @0xx @30x @0x @4g12g12g12g6 @1x3 @0x @2g12d12d12
+	@0x @30x @0x [@4e12e12e12e]2 @2g12d12d12 @0x @30x @0x @2g12d12d12
+	@4 l16 ([b-]8) b-b-b-b-b-12b-6 l4
+
+$$NOI	@8x @7xx2xxx2xxx2x6 @8x3 @7x2
+	@8x @7xx2 [xxx2]3
+
+
+
+$$ALL	k=f k-bea		; C Minor
+
+$$PU2	V10 E70,100,70,4,4 @1 P3,11,2 O3
+$$PU1	V7 E70,100,70,4,4 @1 PX D-1 O2
+$$PULSE	gefg6e_V-3xr6_V3 gdfg6d_V-3xr6_V3 gefg6e_V-3xr6_V3 afga6 f_V-3xr6_V3
+	gefg6e_V-3xr6_V3 gdfg6d_V-3xr6_V3 gefg6e_V-3xr6_V3 agfg6>c_V-3xr6_V3
+
+$$WAV	[
+	 c.(x24)cc.(x24)c<g.(x24)>c d.(x24)dd.(x24)d<g.(x24)>d
+	 e.(x24)ee.(x24)e<g.(x24)>e f.(x24)ff.(x24)f c.(x24) f
+	]2 <
+
+$$PCMB	$$pcmguitar1 V0 O2
+	[e2.f2.g2.a2.]2
+
+$$PCMA	[@0x @30x6 @1x12 @0x]4 [@0x @30x6 @2d12 @0x]3 @0x <@2b12b12b12>d12d12 @1x12
+
+$$NOI	[@8x2 @5x12x12x12]8
+
+
+
+$$PU2	V12 $$brass1
+$$PU1	V8 D0
+$$PULSE	<<b=2ga=b=>cde1_V-5xr4_V5 $$PU2 P8,11,2 $$PULSE e=a=ga=3~a=_V-5x_V5f>c<b=>c2~c6_V-5x_V5
+	 <b=2ga=b=>cde2~e3 $$PU2 _V-7x4_V7 $$PU1 _V-5x4_V5
+$$PU1	$$brass1
+$$PU2	[d-16_V-8x48_V8]4 c16_V-8x48_V8 d-16_V-8x48~xrr3_V8
+$$PU1	[a 16_V-5x48_V5]4 g16_V-5x48_V5 a 16_V-5x48~xrr3_V5
+$$PU2	[d-16_V-8x48_V8]4 e16_V-8x48_V8 d-16_V-8x48~xrr3
+$$PU1	[a 16_V-5x48_V5]4 b16_V-5x48_V5 a 16_V-5x48~xrr3
+$$PU2	V10 E100,80,70,6,40 @@1,2,1 P10,11,5 O1
+$$PU1	V8 E100,90,80,6,40 @3 P6,8,2 O2
+$$PULSE	bgb>c+dee=6_V-5x_V5< bgb>cc+de6_V-5x_V5<
+	bgb>c+dee=6_V-5x_V5 gg-fe=4._V-3B10~<e=8B0
+
+$$WAV	[g.(x24)x]3 g.(x24)g~g.(x24)x [g.(x24)x]10 e=ff+
+	[g.(x24)x]3 g.(x24)g~g.(x24)x g.(x24)xg.(x24)xg4
+	(g6r3r2) gggggg(g6r3)
+	bgb>c+dee=6(x)< bgb>cc+de6(x)<
+	bgb>c+dee=6(x) gg-fe=2
+
+$$PCMB	@10 W0,97,39 O1 b=2.~b=6>c1~c12 c+1 @9 W0,90,20 c1
+	@10 W0,97,39 O1 b=2.~b=6>c1~c12
+	V1 @8 l12
+	d-d-d-d-cd-~d-2 d-d-d-d-ed-~d-2
+	$$pcmguitar1
+	bgb>c+dee=6(e=)< bgb>cc+de6(e)<
+	bgb>c+dee=6(e=) gg-fe=4(e=4
+
+$$PCMA	@0x @1x @0x6x12 @1x6 @0x3 @1x [@0x6x12 @1x @0x @1x]2 @0x6 @1x12x12x12x12
+	@0x @1x @0x6x12 @1x6 @0x3 @1x @0x6x12 @1x
+	[@1x12x12x12x12x12x3 @4g12g12g12]2
+	[@1x12x12x12x12x12x12x]3 @1x12x12x12 @30x2
+
+$$NOI	@8x @7xxx6 @8x3 [@7x]9 x2
+	@8x @7xxx6 @8x3 @7xxx
+	[@7x12x12x12x12x12x3 @8x]2
+	[@7x12x12x12x12x12x12 @8x]3 @7x12x12x12 @8x2
+
+
+
+$$ALL	k-d		; F Minor
+
+$$PU2	V10 $$brass1 O3
+$$PU1	V6  $$brass1 O3
+$$PU2	r4 [a16_V-6x48_V6]3 [b16_V-6x48_V6]3   [f16_V-6x48_V6]3   [g16_V-6x48_V6]3 r4 [g16_V-6x48_V6]3 r4
+$$PU1	r4 [f16_V-4x48_V4]3 [e16_V-4x48_V4]3 < [b16_V-4x48_V4]3 > [d16_V-4x48_V4]3 r4 [d16_V-4x48_V4]3 r4
+$$PU2	r4 [a16_V-6x48_V6]3 [b16_V-6x48_V6]3   [f16_V-6x48_V6]3   [g16_V-6x48_V6]3 r4 [g16_V-6x48_V6]3 r4
+$$PU1	r4 [f16_V-4x48_V4]3 [e16_V-4x48_V4]3 < [b16_V-4x48_V4]3 > [d16_V-4x48_V4]3 r4 [d16_V-4x48_V4]3 r4
+$$PU2	<bag a6f3_V-4x6r_V4 bag ab>c3~c_V-4x6r4_V4 <bag a6f4_V-4x_V4 ab>d2~d_V-4x6r
+$$PU1	V9 P15,11,6 O1
+	f1~f2g6a6b6 d1~d1
+$$PU2	V12 O3
+$$PU1	V8 O3 P8,11,3
+$$PU2	[a 16_V-8x48_V8]3   [b 16_V-8x48_V8]3 r2
+$$PU1	[c 16_V-5x48_V5]3   [d=16_V-5x48_V5]3 r2
+$$PU2	[b=16_V-8x48_V8]3 > [d 16_V-8x48_V8]3 r2
+$$PU1	[e 16_V-5x48_V5]3   [f 16_V-5x48_V5]3 r2
+
+$$PCMB	@11 W0,98,39 O0 V0
+	f1~f2g6a6b6 d1~d2.
+	@43 W0,97,11 V1 O1 YLR
+	fgabaga6f2(f) bagab>c2(cr4) <baga6f4(f) ab>d2~d(dr6)
+	V1 @8 <
+	aaabbb2r b=b=b=>ddd2r
+
+$$WAV	< [f.(x24)x]8 > [d.(x24)x]8
+	< [f.(x24)x]8 > [d.(x24)x]8
+	<fffggg(grr3) aaabbb(brr3)
+
+$$PCMA	[@0x @1x @0x6x12 @1x]7 @0x @1x <@2b12b12b12>d12d12 @1x12
+	[@1x12x12x12x12x12x2r12]2
+
+$$NOI	[@19x2 @7xxxxxx]3 @19x2 @7xxxx2.
+	[@7x12x12x12x12x12x2r12]2
+
+
+
+$$ALL	k=bead k+f		; E Minor
+
+$$PU2	V10 E100,80,80,6,40 @@2,0,1 PX O1
+$$PU1	V4 E100,80,80,6,40 @1 PX O1 D1 r16
+$$PU2	[agaa+b>dedged<b agaa+b>dedeg8_V-6x8_V6<]4
+$$PU1	 agaa+b>dedged<b agaa+b>dedeg8_V-2x8_V2< agaa+b>dedged<b agaa+b>dedeg8_V-2x16
+	$$brass1 V10
+	[agaa+b>dedged<b agaa+b>dedeg8_V-4x8_V4<]2 D0
+$$PU2	$$brass1 V12 O3
+$$PU1	V8 O3
+$$PU2	[a._V-8x24_V8 a._V-8x24_V8 a16_V-8x48_V8 a16_V-8x48_V8]2 P8,11,1 >d4e4V4x6V2x6r6
+$$PU1	[e._V-5x24_V5 e._V-5x24_V5 e16_V-5x48_V5 e16_V-5x48_V5]2 P8,11,1  a4b4V2x6V1x6r6
+
+$$WAV	e1f1g1a1
+	[e(xr)e(xr)ee(x)e(xr) f(xr)f(xr)ff(x)f(xr) _3]2 _0
+	[b(x)b(x)bb]2 >d6(x)e4(x6r3)
+
+$$PCMB	$$pcmguitar1 V0
+	e1f1g1a1
+	[
+	 eYL.erYLR eYL.erYLR eeYL.eYLR eYL.erYLR
+	 fYL.frYLR fYL.frYLR ffYL.fYLR fYL.frYLR _3
+	]2 _0 <
+	@8 V1 a6a6aaa6a6aa>d4e2.
+
+$$PCMA	[@0xxxxxx @2d6d6d6]2
+	[@0x @1x @0x12x6 @1x]2 [@1xxx12x6x]2
+	[@30x6 @1x6x12x12]2 @30xx2.
+
+$$NOI	@8x1x1x1x @7x2.
+	@8x [@7x]15
+	[@7x6x6x12x12]2 @8xx2.

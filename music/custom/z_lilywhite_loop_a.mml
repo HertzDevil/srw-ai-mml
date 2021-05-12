@@ -1,0 +1,208 @@
+; Onaji Hoshi ga Mitai
+; 同じ星が見たい
+
+$PU1,		!1
+$PU2,		!2
+$WAV,		!3
+$NOI,		!4
+$PCMA,		!5
+$PCMB,		!6
+$PULSE,		!12
+$PCM,		!56
+$GB,		!1234
+$ALL,		!123456
+
+$bass1,		@A3 @B0 EX @~3
+$bass2,		@A3 @~X E100,100,80, 5, 1
+$bass3,		@A3 @~X EX
+$rhode1,	@@3,2,1 E 80,100,20, 1,19 P0,12,2
+$rhode2,	@@2,0,1 E 90,100,70, 1,12 P0,19,4
+$rhode3,	@@3,0,1 E100, 40,20,25,20 P0,12,1 D1
+$rhode4,	@@2,0,2 E100, 80,40, 5,19 PX
+$string1,	@@2,0,1 E 80,100,60, 6,36 P0,16,1
+$string2,	@1      E70,100,100, 3, 3 PX
+$guitar,	@@3,1,0 E100, 70,30, 6,60 PX
+$dist,		@@3,2,0 E100, 80,60, 1,12 PX
+$lead,		@@2,1,2 E100,100,80, 6, 6 P41,11,4 YLR
+$sublead,	@@2,1,2 E100,100,80,37, 6 P41,11,4
+$leadecho,	@@2,1,2 EX                PX YL. r64. D2
+$pcmstring1,	@40 W0,96,45
+$pcmstring2,	@43 W0,99,0
+$pcmguitar,	@83 W0,97,56
+$pcmdist1,	@82
+$pcmbrass,	@81 W0,97,50
+$pcmvibe,	@44
+$pcmzz,		@80 D-3
+
+
+
+; intro
+
+$$ALL	L
+
+$$ALL	k+f T162 _0	; E Minor
+
+/*
+$$PU1	$$rhode1 V5 O3 l8 efga
+	$$string2 O2 V3 l16 _-1
+	[YLR ca- Y.R ca- YLR ca- YL. ca-]4 [YLR d-a- Y.R d-a- YLR d-a- YL. d-a-]4 [YLR d-g Y.R d-g YLR d-g YL. d-g]4
+	$$rhode4 V6 YLR _0 >
+	[r8 bYL. bYLR aY.R aYLR eYL. eYLR]2 [r8 bYL. bYLR g+Y.R g+YLR eYL. eYLR]2
+
+$$PU2	$$lead V7 O3
+	l4 r2 EP-8,-8,0,3,5 b2 EPX a2gf e<b>c [c8._V-4 c16_V4]2 EP0,0,-17,11,8 b EPX a2._V-4 a8r8_V4
+	      EP-9,-9,0,3,5 a2 EPX g2fe8._V-4 e16_V4 d8._V-4 d16_V4 f8._V-4 f16_V4
+	l8    f2_V-4 f_V4 EP-15,0,0,4,0 f EPX ee1_V-4 e
+
+$$PCMB	$$pcmstring1 O2 V1
+	l8 efgab1(b1r1)a4g4f4e4d1(d1)<a2.~a(a)g+2.~g+(g+)
+
+$$PCMA	$$pcmguitar O1 V1
+	l8 r2 cgb>e~e2g4.e4.<b4<a>ea>c~c2e4.c4.<a4da>df~f2a2f2<b1.
+	@24x16x16 @0x @24x4
+
+$$WAV	$$bass3	V1 O2
+	l1 r2c.<b2a.>c2d~d O0 )e)e
+
+$$NOI	[r1]7 @20x1 @3x16x16 @1x8 @3x4
+*/
+
+
+
+$$PU1	$$rhode1 O4 YLR
+$$PU2	$$rhode2 O3
+$$PULSE	V7 l8
+	[[g4.f4g _V-4g4_V4]2 g4.f4.gab>c<ba4gf4]2
+
+$$PCMB	$$pcmstring1 O1 V1
+	l4 [e.<b2 (b8) r8a8b8>ge8de.<b.>gf.e $$pcmzz b8e8 D0 $$pcmstring1 (d8)]2
+
+$$WAV	$$bass2 O0 V3
+	l8 [[e]7 f [g]8 >[c]8 [d]8 <]2
+
+$$NOI	l8 @8x4 @5x @7x @5[x]12 @8x4 @5x @7x @5xxxx @8x4 @5x @7x @5xx @7x4
+	   @8x4 @5x @7x @5[x]12 @8x4 @5x @7x @5xxxx @8x4xx4 @5xxx
+
+$$PCMA	V1 l4
+	[@0x @24x]2 @0x @24x8 @0xx8 @24x [@0x @24x]3 @0x8x8 @24x16 @0x8.
+	[@0x @24x]2 @0x @24x8 @0xx8 @24x [@0x @24x]2 l8 @0xx @24x16 @0x.x.x16 @24x4
+
+
+
+; verse
+
+$d,		$$PU1 _V-2 $$PU2 _V-4 $$PULSE
+$u,		$$PU1 _V 2 $$PU2 _V 4 $$PULSE
+
+$$PU1	$$leadecho B3 V4 <
+$$PU2	$$lead B3 V8 [
+$$PULSE	l8   g4.    f.$$d f16$$u d16$$d d16$$u <bb      ~b2$$d b4$$u >ed
+	     e4.<g4              a16$$d a16$$u  ga16~b16~b2$$d b4$$u r4>
+	f32~g16.~g4 f.$$d f16$$u d             <bb      ~b2$$d b $$u b>ef
+	     g4.$$d gr$$u g4ag4 $$PU2 ff4._V-4 f4_V4
+			      $$PU1 f16.r128 $$rhode1 YLR V7 gfed<b
+$$PU2	]2
+$$PU1	$$sublead V3 D0
+	>b4.a._V-2 a16_V2 f16_V-2 f16_V2 dd~d2_V-2 d4_V2 gf
+	g4.<b4>c16_V-2 c16_V2 <b>d2 $$string1 V7 gf_V-4 f_V4 ed $$guitar
+	O1 cg>ec~c1. O0 g>g>d<b4 $$sublead V3 O3 b4>c<b>
+	$$rhode1 YL. V8 bf<bf YLR agf
+
+$$WAV	[e]16 [d]14 a>d [c]16 <[g]7 a [b]8
+	[e]16 [d]14 a>d [c]16 <[g]7 a [b]6 ab
+
+$$PCMB	$$pcmguitar l8 eb>e4~e1.<da>fd~d1.<cg>ec~c1. O0 g>g>d<b2
+	$$pcmstring2 ba(a)gf(f)ed<b
+	$$pcmstring1 l2 [>gfd<b]3 a1b4.>b4a8g8f8
+
+$$NOI	@8x4 @5[x]62 @8x4 @5[x]30 @8x4 @5[x]28 @8x4
+
+$$PCMA	l4 @0x @24x @0x @24x8 [r8 @0x @24x8 @0xx8 @24x8]3 @0x8
+	  [@0x @24x]2 @0x @24x8 @0xx8 @24x @0x @24x @0x8x8 @24x @0x @24x8. @0x16x8x8 @24x
+	  [@0x @24x]2 [@0x @24x8 @0xx8 @24x]2 @0x @24x @0x8x8 @24x16 @0x8.
+	  [@0x @24x]2 [@0x @24x8 @0xx8 @24x]2 @0x @24x @0x8x8 @24x
+
+$-d $-u
+
+
+
+; pre-chorus
+
+$$PU1	$$sublead V3
+	r4g_V-2 g_V2 gab>c4.<b4a4f4 d._V-2 d16_V2  g16_V-2 g16_V2 g~g2 $$rhode3 V7  a4.b_V-4 b_V4 a4. D0
+$$PU2	r4e_V-4 e_V4 efg a4. g4f4d4<b._V-4 b16_V4 >e16_V-4 e16_V4 e~e2 $$rhode3 V7 >d4.e_V-4 e D0 $$lead V8 <ddd
+$$PU1	$$rhode4 V6 <
+	l16 aYL. aYLR    >cY.R cYLR eYL. eYLR aY.R aYLR    eYL. eYLR dY.R dYLR cYL. cYLR >cY.R cYLR
+	 V3 cYL. cYLR V6 <gY.R gYLR fYL. fYLR bY.R bYLR V3 bYL. bYLR $$string1 V7 YL. l8 <fga
+$$PU2	d4cc_V-4 c_V4 d_V-4 d_V4 EP-16,-12,0,6,3 e~e2_V-4EPX e_V4 efg
+$$PU1	r4 YLR $$rhode1 V7 >b4_V-3 b_V3 a4_V-3 a_V3 g4_V-3 g_V3 fefga
+$$PU2	g4ff4e._V-4 e16_V4 EP-10,-10,0,3,3 b4. EPX>c<a4._V-4 a4
+
+$$PCMB	$$pcmstring2
+	l8 <e4fg4ec(cr)aba.(a16)gfd16(d16)redg4.(g4)>f(f4)g(g)f(f4)
+	$$pcmstring1
+	<rea>e4dce(e)>efg(g)fgar4<b4(b)a4(a)g4(g)fefga
+
+$$WAV	$$bass1 >c2.~c<g>d<a>d2<a4e1e4f4g4b4
+	$$bass2 [a]16 [b]14 EP0,-16,-128,4,8 >g~ EPX EX V2 ~d32<~b16(b32)
+
+$$NOI	x4 @5[x]12 @7x @5[x]9 @8x4.x4 @14x4.
+	@8x4 @5[x]8 @8x @5[x]5 @8x4 @5[x]6 @8x4 @5[x16]12
+
+$$PCMA	@0x2 @24x.(x16x16) @0x8x8(x) @24x (@0x8x8) @0x2 @24x. @0(x24x24x24)xx @24x8 @0x @24x8
+	@0x @24x @0x8x8 @24x @0x @24x8 @0xx8 @24x8 @0x8x @24x @0x8x8 @24x @0x @24x8 @0x8 @24x8 @0x8 @24[x16]4
+
+
+
+; chorus
+
+$$PU1	$$sublead V5
+$$PU2	V8
+$$PU1	l4 EP-9,-9,0,3,5 g2 EPX f2ed<b g a [a8._V-3 a16_V3]2 EP0,0, -9,11,8 >g  EPX f2._V-3 f8r8_V3
+$$PU2	l4 EP-8,-8,0,3,5 b2 EPX a2gf e<b>c [c8._V-5 c16_V5]2 EP0,0,-17,11,8  b  EPX a2._V-5 a8r8_V5
+$$PU1	l4 EP-9,-9,0,3,5 f2 EPX e2dc8._V-3 c16_V3 <b8._V-3 b16_V3 >d8._V-3 d16_V3
+					 d [d8._V-3 d16_V3]2 EP0,0, 17,21,6  e1 EPX    _V-3 f8r8_V3
+$$PU2	l4 EP-9,-9,0,3,5 a2 EPX g2fe8._V-5 e16_V5  d8._V-5 d16_V5  f8._V-5 f16_V5
+					 g [g8._V-5 g16_V5]2 EP0,0, 17,21,6  a1 EPX    _V-5 b8r8_V5
+$$PULSE	V6 l8 !1 D1 !2 D-1 !12
+	 c4cc_V-4 c_V4 !1 EP -6, -6,0,1,3 !2 EP -8, -8,-1,1,3 !12  b4 EPX !1 D1 !2 D-1 !12 a2. _V-4 a4r_V4
+	<b4bb_V-4 b_V4 !1 EP-11,-11,0,1,5 !2 EP-13,-13,-1,1,5 !12 >a4 EPX !1 D1 !2 D-1 !12 g2~g_V-4 g r_V4 D0
+$$PU1	V5 cde2_V-3 er_V3 e._V-3 e16_V3 EP-9,-9,0,1,4 f4 EPX d4<b._V-3 b16_V3 EP-9,-9,0,1,4 >d4 EPX a1~g+1
+$$PU2	V8 efg2_V-5 gr_V5 g._V-5 g16_V5 EP-9,-9,0,1,4 a4 EPX f4 d._V-5 d16_V5 EP-9,-9,0,1,4  f4 EPX e1~e1
+
+$$PCMB	$$pcmbrass O0 l2 YLR (cegbag) $$pcmstring2 l4 >agfe
+	$$pcmstring1 O3 c2<b2ag8.(g16)f8.(f16)a8.(a16)b [b8.(b16)]2 >c+ l8 $$pcmstring2 O1 b>c<abgafg
+	e1(e)dfa4(a)d4b1(b)egb4(b) $$pcmstring1 >gab2(br)b.(b16)>c4<a4g.(g16)a4
+	$$pcmvibe l16 ( [ee)b(b)a(a)e(e]2 [ee)b(b)g+(g+)e(e]2
+
+$$WAV	$$bass2 V3
+	>[c]14 <bb [a]14 >cc <[d]14 ef [g]7 a [b]6 fb
+	[a]8 [d]8 [b]8 [e]8 [a]8 [b]8 [e]16
+
+$$NOI	@14x4 [@5[x]12 @8x4x4]3 @5[x]6 @8x4 @5[x]6
+	@14x4 [@5[x]12 @8x4x4]2 @5[x]6 [@8x4 @5xxxx @8x4]2 x4 @20x2.
+
+$$PCMA	[[@0x @24x]2 [@0x @24x8 @0xx8 @24x]3 ]2
+	[@0x @24x]2 @0x @24x8 @0xx8 @24x8x8 [@0x @24x]2 @0x @24x8 @0xx8 @24x
+	@0x @24x @0x8x8 @24x @0x @24x8 @0xx8 @24x8x8 [@0x @24x8 @0xx8 @24x]2
+
+
+
+; lead-out
+
+$$PULSE	$$dist PX V5 l8
+$$PU1	O1 eee_V-3 e16e16_V3 reed_V-3 d16d16rr2 $$rhode1 O3 V5 f16g16a16b16> V7 e2. Y.R @0 @~X
+$$PU2	O0 bbb_V-3 b16b16_V3 rbbb_V-3 b16b16rr2 $$rhode2 O2 V5 f16g16a16b16>
+	$$rhode4 V6 l16 bYL. bYLR eY.R eYLR gYL. gYLR eY.R eYLR bYL. bYLR eY.R eYLR $$rhode2
+$$PULSE	l8 gab>c<ba4gf4
+
+$$WAV	O2 $$bass2 V2 [eebe>e<beb]2 ccgc>c<gcg EX O0 V2 P0,16,14 )d1 PX
+
+$$PCMB	$$pcmdist1 O2
+	l8  eeeYL.e16Y.Re16YLRreedYL.d16Y.Rd16YLR) $$pcmguitar <ab>g4d4.
+	@21 rcc(c)rccc r2r $$pcmzz <be4 D0
+$$PCMA	$$pcmdist1 O1
+	l8 (bbbYL.b16Y.Rb16YLRrbbbYL.b16Y.Rb16YLR)
+	r2 @0x16x16 @24x4 x(xxx)x (@0x @24x @0x)x4 @24x4 x16x16x16x16xx16x16
+
+$$NOI	r1r @15xxxx @5x @6x4 [@8x4 @5xx]2 @8x4x4 @5xxxx

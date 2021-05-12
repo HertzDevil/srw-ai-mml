@@ -1,0 +1,150 @@
+; Judau in Space
+; 宇宙のジュドー
+
+$PU1,	!1
+$PU2,	!2
+$WAV,	!3
+$NOI,	!4
+$PCMA,	!5
+$PCMB,	!6
+$PULSE,	!12
+$PCM,	!56
+$GB,	!1234
+$ALL,	!123456
+
+$string,	@@2,0,1 E 80,100,60, 6,36 P 0,16,1
+$string2,	@@2,0,1 E 60,100,60, 6,30 P12, 8,2
+$brass1,	@@3,1,0 E100, 70,55,40,40 P18,10,3 EP-7,1,1,4,0
+$brass2,	@@3,1,0 E100, 70,55,40,40 P18,10,2
+$sax,		@@3,1,2 EX                P 6,14,2 EP-2,0,0,4,0
+$sax2,		@@2,1,2 EX                P 0,14,2 EP-2,0,0,2,0
+
+/*
+noise channel instruments
+0: blank	1: kick		2: dim. kick	3: snare
+4: dim. snare	5: c-hihat	6: dim. c-hihat	7: o-hihat
+8: crash	9: dim. blank	A: blank 2	B: reverse cym
+C: cymbal 1	D: cymbal 2	E: cymbal 3	F: o-hihat 2
+10: growl 1	11: growl 2	12: rev cym 2	13: cymbal 4
+14: rev cym 3
+*/
+
+
+
+$$ALL	k-be T150 _0	; G minor
+
+$$PULSE	$$string l4
+$$PU1	V5    [rg.b.g.b~b.]2 a.>d.<a1r >d.c .<g1~g
+$$PU2	V4 D1 [rd.e.d.e~e.]2 d. g. d1r  g.e=. c1~c
+
+$$WAV	E100,100,30,6,5 @A0 O2 V2
+	l8 [g]27 [f+]5 [f]16 [e=]6 [e]10
+
+$$NOI	l4 [r @5x2 @6x16 @6x16 @7x8r @5x2 @7x]4
+
+$$PCM	[r1]8
+
+
+
+!1236	L
+
+$$PU1	$$brass1 O2 V9
+$$PU2	$$string O2 V6 D1
+$$PU1	[rg.b.g.b~b.]2 a.>d.<a1r >d.c .<g2. f+2
+$$PU2	[rd.e.d.e~e.]2 d. g. d1r  g.e=. c2.<b=2>
+
+$$PCMB	@21 O1 V0
+	l8 [g]27 [f+]5 [f]16 [e=]6 [e]10
+
+$$WAV	E100,100,80,18,1 @A0 V3 O1
+	l4 rg.<g.>g.<g~g. r>g.<g.>g. f+~f+.f.<f.>f1r e=.e=.e2. E100,100,80,36,1 e2
+
+$$NOI	l16 [@5xxxxx2xx @8x8 @5x4x8x4. @8x8.r]3
+	     @5xxxxx2xx @8x8 @5x4x8x8 @20x2
+
+$$PCMA	V1 l4
+	[r @0[x.]4 @24x]2 @0[x.]3 r2r8 @24x @0x.x.x2.xx
+
+
+
+!45	L
+
+$$ALL	k=be k+fc	; B minor
+
+$$PU1	$$string EPX
+$$PCMB	@40 W0,95,1 V1 O1
+$$PU1	V10 a. f~f.  a. f2 a8b8>c=8c8d~d. $$brass2 V11
+	          l8 a4~_V-7a_V7 f4.~_V-7f_V7 a l16 b~_V-7b_V7 >c=~_V-7c=_V7 c~_V-7c_V7 d2~_V-7d8
+$$PU2	V7  d.<b~b.[>d.<b2>d8e8 f=8f8g~g.]2
+$$PCMB	    f4.d+2 ~V0d+8V1 [f4.d+2fg+a a+b2 ~V0bV1>]2
+
+$$WAV	EX @~3 @A3 @B0
+	l8 [d+ V2d+V3]4 [[d+ V2d+V3]4 dcc=<b4 V2bV3 b V2bV3>]2 <
+
+$$NOI	l4 @8x @3x @5x @3x [[@5x @3x]2 @5x8x8 @3x8 @8x. @3x]2
+
+$$PCMA	l16  [@0x4 @24x8 V0@18xxV1]2
+	    [[@0x4 @24x8 V0@18xxV1]2 @0x8x8 @24x8 @0x4. @24x8 V0@18xxV1]2
+
+
+
+$$PU1	EP-7,1,1,4,0 V7 <
+$$PU2	$$sax D0 V7
+$$PU1	l2 fdf4.g~g8
+$$PU2	l8 r4.fg _V-3g16_V3 a _V-3a16_V3 br4fg. _V-3g16_V3 >d _V-3d16_V3 c= _V-3c=16
+$$PU1	f4. EPX V9 f8df4.g~g8
+$$PU2	$$brass1 V6 l2 <d+<b>d+4.e~e8 EPX
+$$PULSE	$$string2 l8 V6 D1 <
+$$PU1	[b4.a+4.a  _V-4a _V4 g+4.g 4.f _V-4f_V5 >]2
+$$PU2	[d4.c 4.c= _V-4c=_V4 <b4.a+4.a _V-4a_V5 >H17]2 H0
+
+$$PCMB	@28 W0,97,47 O2 V0
+	l2 [d+<b>d+4.e~e8]2
+	[[[V1 d12 V0 d24 V1 <g12 V0 >d24 V1 d12 V0 <g24> H<]2 V1 d12 V0 d24 V1 <g12 V0 >d24 H<]2 H0]2
+
+$$WAV	[b V2bV3 b4b V2bV3 b. V2b16V3 b4>b<b V2b4V3 b. V2b16V3]2
+	b4 V2bV3 >b4 V2bV3 <b V2bV3 >b4 V2bV3 <b4 V2bV3 >ba+16 V2a+16 <V3
+	b4 V2bV3 >b4 V2bV3 <b V2bV3 >b4 V2bV3 <b4>b16 V2b16V3 b<b16 V2b16V3
+
+$$NOI	[@5x @3x]16
+
+$$PCMA	[[@0x4 @24x8 V0@18xxV1]2 @0x4 @24x8 @0x V0@18xx4V1 @24x8 V0@18xxV1]2
+	 [@0x4 @24x8 @0x V0@18xx4V1 @24x8 V0@18xxV1]4
+
+
+
+$$PU1	V12          l16 <b ~_V-5b _V5 >c=~_V-5c=_V5 c ~_V-5c _V5 d2~_V-5d8_V5
+$$PU2	V8  $$brass2 l16  g+~_V-5g+_V5  a ~_V-5a _V5 a+~_V-5a+_V5 b2~_V-5b8_V5
+$$PU1	    V9 << l4 b .>f g $$sax2 g+16 V7 a16 V3 @@1,1,2 [g+24a24g+24a24 _V1]6
+$$PU2	$$string2 l4 g+.>d+ef1~f8
+$$PU1	V12$$string2 l16  b ~_V-5b _V5 >c=~_V-5c=_V5 c ~_V-5c _V5 d1~_V-5d8_V5
+$$PU2	V8  $$brass2 l16  g+~_V-5g+_V5  a ~_V-5a _V5 a+~_V-5a+_V5
+	$$sax2 V4 f16g16 @@1,1,2 [_V1 f24g24]5 [_V-1 f24g24]7
+$$PU1	             l8 d4~_V-5d_V5 f=~ E30,100,80,72,24 f=1
+$$PU2	V8  $$string l8 g4~_V-5g_V5 a ~ E30,100,80,72,24 a 1
+
+$$PCMB	@40 W0,95,1  V1
+	l16 g+ V0g+V1 a V0aV1 a+ V0a+V1 b2 V0b8V1 l4 <e.b>c=d1 V0d8V1
+	@28 W0,97,47 <
+	l16 g+ V0g+V1 a V0aV1 a+ V0a+V1 b1 V0b8V1 b4 V0b8V1 >c=1~c=8
+
+$$WAV	>dc c=<b4 V2bV3  b V2bV3 b4 V2bV3 >[b V2bV3]2 <b1 V2bV3
+	>dc c=<b4 V2bV3 [b V2bV3]3
+	 ba+a  g4 V2gV3 [g V2gV3]3
+
+$$NOI	@5x @3x8 @8x. @3x [@5x @3x]2 @15xxxx
+	@8x @3x [@5x @3x]3 @15x @3x8x8 @1x8x8 @3x8 @1x8
+
+$$PCMA	@0x8x8 @24x8 @0x4. @24x8 V0@18xxV1
+	@0x4 @24x8 @0x V0@18xx8V1 @0x8 @24x8 @0x V0@18xx4V1 @24x8 V0@18xxV1 @0x4 @24x8 V0@18xxV1
+	@0x4 @24x8 @0x V0@18xx4V1 @24x8 V0@18xxV1 @0x4 @24x8 V0@18xxV1 @0x4 @24x8 @0x8
+	l8 V0@18xV1 @0x @24xx @0xx @24x @0x
+
+
+
+$$NOI	@8x @3x [@5x @3x]6 @5x @8x [@5x @3x]3 @5x @8x @5x @3x @5x @15x @5x @8x @20x2
+
+$$PCMA	l4 @0x @24x. @0x8 @24x @0x @24x8 @0x.  @24x
+	   @0x @24x. @0x8 @24x @0x @24x8 @0xx8 @24x
+	   @0x @24x8 @0x. @24x2x. @0x8 @24x
+	   @0x @24x8 @0x. @24x2x  @0xx

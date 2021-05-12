@@ -1,0 +1,2 @@
+A00000
+21	sample/custom/r_033.bin
