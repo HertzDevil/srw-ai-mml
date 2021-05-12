@@ -1,0 +1,49 @@
+SD          0E x        set pulse sweep depth
+S+          0F          sweep up
+S-          1E          sweep down
+SR          1F x        set pulse sweep rate
+            2E x        set duty and length (pulse ch)
+@           2F x        set duty, pulse
+            3E x        set fade-in
+O           4F x        set octave
+V           5E x        set volume
+)           5F          raise volume
+(           6E          lower volume
+>           6F          raise octave
+<           7E          lower octave
+T           7F x        tempo
+            9F x
+            AE x
+L           BF          channel loop point
+Y           D0 xy       set l/r output, channel-dependent mask (AND x OR y)
+.           D1          dot note
+E           D2abcde     volume envelope: a, to b in d ticks, to c in e ticks (99 max)
+EX          D3          disable volume envelope
+~           D4          tie / quick portamento
+D           D5 +x       fine pitch
+[           D6          start loop
+]           D7 x        end loop
+@A @B       DA x        set waveform, gb wav (set alt. waveform if >= 80h)
+@           DB x        set instrument, noise
+@           DC x        set sample, PCM A
+@           DD x        set sample, PCM B
+@@          DE xyz      set duty to y for (x - 1) ticks, then duty z
+P           DF xyz      vibrato with delay x, period y, depth z
+PX          E0          disable vibrato
+@@X         E1          disable duty envelope
+EP          E2abcde     pitch envelope: a, to b in d ticks, to c in e ticks
+EPX         E3          disable pitch envelope
+H           E4 x        transpose (modified by EE/EF)
+B           E5 x        portamento duration
+DD	*   E6 xx	fine pitch (16-bit signed)
+W           E7 xyz      loop sample, start from x, loop between y and z
+_           E9 x        transpose
+@~          EA x        set waveform delay to (x - 1) ticks
+@~X         EB          disable wav alt. waveform
+            EC x
+H>          EE          raise transpose
+H<          EF          lower transpose
+_V          F1 +x       set relative volume
+            FF          end of track
+
+`                       direct input
