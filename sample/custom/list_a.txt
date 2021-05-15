@@ -1,5 +1,5 @@
 A00000
-50	sample/r/033.bin
+50	sample/d/056.bin
 51	sample/r/061.bin
 52	sample/r/056.bin
 53	sample/r/050.bin
