@@ -40,7 +40,7 @@ local main = function (rom, fname)
       local rate = ("<I2"):unpack(sample:read(2))
       local data = sample:read("*a")
       samples[id + 1] = {
-        size = data:len(), rate = rate, data = data, source = fname
+        size = data:len(), rate = rate, data = data, source = sample_fname
       }
       sample:close()
     end
